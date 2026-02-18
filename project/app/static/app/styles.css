@@ -1,0 +1,101 @@
+     body{
+    background-image: url("./pngtree-dark-green-background-exquisite-exotic-plants-and-leaves-in-a-seamless-image_13916991.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+        .containar{
+            background-color: rgba(8, 54, 20, 0.897);
+            width: 400px;
+            border: 2px solid black;
+            margin: 100px auto;
+            border-radius: 20px;
+            height: auto;
+            text-align: center;
+            padding: 35px 0px 50px 0px;
+        }
+
+        .logo{
+            height: 200px;
+        }
+
+        h2{
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        
+        }
+
+        input {
+            width: 250px;
+            padding: 10px;
+            color: white;
+            border: 1px solid gray;
+            border-radius: 6px;
+            background-color: rgb(48, 47, 47);
+        }
+
+
+        button{
+            cursor: pointer;
+            width: 50%;
+            border-radius: 20px;
+            color: white;
+            border: 2px solid rgb(0, 255, 234);
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        .inner{
+            background-color: rgb(127, 255, 165);
+            border:1px solid black;
+            border-radius: 10px;
+            margin: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        h1{
+            color: aliceblue;
+        }
+
+        table,th,td{
+            padding: 5px;
+            border: 0.5px solid black;
+            background-color: azure;
+            margin: -70px 0px 50px 450px;
+            border-radius: 2px;
+        }
+
+
+        .clck{
+            background-color:rgb(177, 45, 45);
+            border: none;
+            width: 80px;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .clck1{
+            background-color:green;
+            border: none;
+            width: 80px;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .search-box{
+            margin: 0px 0px 0px 600px;
+        }
+
+        .search-box button{
+            max-width: 70px;
+        }
+
+        

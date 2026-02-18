@@ -1,0 +1,98 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="{% static 'app/styles.css'%}">
+</head>
+
+<body>
+
+<div class="containar">
+<form method="POST">
+    {% csrf_token %}
+    <div class="inner">
+        
+    <h2>Welcome</h2>
+        <input type="text" name="name" placeholder="Enter Your name" required>
+        <br><br>
+        
+        <input type="email" name="email" placeholder="Enter Your Email" required>
+        <br><br>
+        
+        <input type="number" name="age" placeholder="Enter Your Age" required>
+        <br><br>
+        
+        <input type="text" name="adress" placeholder="Enter Your Adress" required>
+        <br><br>
+        <button>Login</button>
+
+
+    </div>
+
+</form>
+{% comment %} 
+<div>
+   
+    {% for i in hell %}
+    <ul>
+        <li>{{ i.name }}</i>
+    </ul>
+    {% endfor %} 
+</div> {% endcomment %}
+
+</div>
+
+   <div class="search-box">  
+ 
+    <form>
+        <input type="text" name="search" placeholder="Search here">
+        
+        <button>Submit</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div>
+
+    <table>
+        <tr>
+        <th>SI No.</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Adress</th>
+        <th>ID</th>
+        <th>Update</th>
+        <th>Delete</th>
+        </tr>
+
+        {% for i in hell %}
+
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.adress}}</td>
+            <td>{{i.id}}</td>
+            <td><a href="update-record/{{i.id}}/"><button class="clck1">Update</button></a></td>
+            <td><a href="/askquestion/{{i.id}}/"><button class="clck">Delet</button></a></td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</div>
+
+</body>
+
+</html>
+
+
+
