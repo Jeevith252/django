@@ -50,3 +50,6 @@ def upda(request,id):
         print("Updated")
         return redirect('/')
     return render(request,'update.html',{'hell' : record})
+
+def register_pg(req):
+    return render(req,"register.html")

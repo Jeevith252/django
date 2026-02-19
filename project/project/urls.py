@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',hello),
     path('askquestion/<int:id>/', dell, name="delete_student"),
-    path('update-record/<int:id>/', upda, name="update_student")
-
+    path('update-record/<int:id>/', upda, name="update_student"),
+    path('register/',register_pg)
 
 ]
