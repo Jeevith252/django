@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import *
+from app.views import login_pg
+
 
 
 urlpatterns = [
@@ -24,6 +26,9 @@ urlpatterns = [
     path('',hello),
     path('askquestion/<int:id>/', dell, name="delete_student"),
     path('update-record/<int:id>/', upda, name="update_student"),
-    path('register/',register_pg)
+    path('register/',register_pg),
+    path('login/', login_pg, name='login'),
+    path('logout/', logout_pg, name='logout'),
+
 
 ]
