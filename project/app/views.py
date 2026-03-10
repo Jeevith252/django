@@ -13,13 +13,13 @@ def hello(request):
         name =data.get('name')
         email =data.get('email')
         age =data.get('age')
-        adress=data.get('adress')
+        address=data.get('address')
         
         Students.objects.create(
             name= name,
             email=email,
             age=age,
-            adress=adress
+            address=address
         )
         print("The data is added succesfully")
     stu =Students.objects.all()
